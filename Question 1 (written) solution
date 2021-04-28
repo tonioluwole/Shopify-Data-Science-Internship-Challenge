@@ -1,0 +1,12 @@
+1a. A possible flaw with this calculation is that the literal average value of the orders has a few, 
+impactful outliers. The customer with the user id of 607 is especially skewing the data quite a bit 
+because they’re spending a lot more money than the other users and a lot more frequently, not to 
+mention the other users that spend tens of thousands so it makes the average price unnaturally high. 
+So those orders should not really be taken into consideration when trying to find a realistic average order amount.
+
+1b. Since the mean is out of the picture, Instead, we should use one of the other measures of central tendency - 
+median or mode. Since the data can be mathematically ordered, and it’s skewed, A median is our best bet!
+
+1c. The value is 284, found using =MEDIAN(D:D) on excel/sheets. To be honest I got stuck trying to load the sorted orderAmount
+values into a new array in my Java Program attempting to solve this problem. Hopefully being at an internship like this 
+can teach me how to not get stuck like this anymore
